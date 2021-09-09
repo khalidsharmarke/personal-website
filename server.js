@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const PORT = 8800;
 
-app.use('/', express.static('static'));
+app.use('/', express.static(`${__dirname}/static`));
 
-app.use('/:endpoint', (req, res) => res.redirect('/'))
+app.use('/:endpoint', (req, res) => res.redirect("/"))
 
 app.listen(PORT, () => console.log(`running on port ${PORT}`));
