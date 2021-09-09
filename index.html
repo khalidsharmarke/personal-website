@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<head>
+    https://coolors.co/c1dbe3-c7dfc5-f6feaa-fce694-373737
+    <style>
+    body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #373737;
+        color: #373737;
+    }
+
+    div {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        text-decoration: underline;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    h4 {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .header {
+        background-color: #C1DBE3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 10%;
+    }
+
+    .profile-picture {
+        border: 1px;
+        border-radius: 50%;
+    }
+
+    .header h1 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .project-list-container {
+        background-color: #C7DFC5;
+    }
+
+    .project-list div {
+        background-color: #F6FEAA;
+    }
+
+    .project-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img class="profile-picture" src="profile_picture.jpeg" alt="image of Khalid Sharmarke">
+        <h1>Khalid Sharmarke - Full Stack Web Development</h1>
+    </div>
+    <div class="project-list-container">
+        <div class="project-list">
+            <H2>Projects:</H2>
+            <div class="project">
+                <div class="project-title">
+                    <h2>Slack Message Tracker</h2>
+                    <p class="c3">
+                        <span class="c7">
+                            <a class="c1" href="https://github.com/khalidsharmarke/SlackMessageTracker">github.com/khalidsharmarke/SlackMessageTracker</a>
+                        </span>
+                        <span class="c13"> | </span>
+                        <span class="c7">
+                            <a class="c1" href="http://kshar.hopto.org/slack_message_tracker">kshar.hopto.org/slack_message_tracker</a>
+                        </span>
+                    </p>
+                </div>
+                <ul class="c12 lst-kix_htbd8arjk2rk-0 start">
+                    <li class="c2 li-bullet-0"><span class="c4">Full Stack Web App that allows users to view historical messages, as a workaround to Personal Slack&rsquo;s 10k message limitation</span></li>
+                    <li class="c2 li-bullet-0"><span class="c4">Event-Based Node.js Microservice hooks to Slack API in order to save new data to Postgres database</span></li>
+                    <li class="c2 li-bullet-0"><span class="c4">Leveraged Django ORM to handle storing from microservice and serving data to the front end</span></li>
+                    <li class="c2 li-bullet-0"><span class="c6">React UI uses websockets to display </span><span class="c6">real time</span><span class="c6">&nbsp;</span><span class="c6">updates from DB without need for refreshing</span></li>
+                </ul>
+            </div>
+            <div class="project">
+                <div class="project-title">
+                    <h2>A Fake Artist Goes To New York</h2>
+                    <p class="c3">
+                        <span class="c7">
+                            <a class="c1" href="http://github.com/khalidsharmarke/A-Fake-Artist-Goes-To-New-York">github.com/khalidsharmarke/A-Fake-Artist-Goes-To-New-York</a>
+                        </span>
+                        <span> | </span>
+                        <span class="c7">
+                            <a class="c1" href="http://kshar.hopto.org/fake_artist">kshar.hopto.org/fake_artist</a>
+                        </span>
+                    </p>
+                </div>
+                <ul class="c12 lst-kix_ulto8mj54ng6-0 start">
+                    <li class="c2 li-bullet-0"><span class="c4">Web-based implementation of the board game &lsquo;A Fake Artist Goes To New York&rsquo; by Oink games</span></li>
+                    <li class="c2 li-bullet-0"><span class="c6">Express.JS server handles </span><span class="c4">requests to the index page, room creation, and game state</span></li>
+                    <li class="c2 li-bullet-0"><span class="c4">Used socketed connections between server and clients for concurrent game states and data handling</span></li>
+                    <li class="c2 li-bullet-0"><span class="c4">Front end implements a modified third-party JS library to give clients drawing capabilities while playing</span></li>
+                </ul>
+            </div>
+            <div class="project">
+                <div class="project-title">
+                    <h2>Reddit Image Scraper</h2>
+                    <p class="c3">
+                        <span class="c7">
+                            <a class="c1" href="https://github.com/khalidsharmarke/reddit-image-scraper">github.com/khalidsharmarke/reddit-image-scraper</a>
+                        </span>
+                        <span class="c13"> | </span>
+                        <span class="c7">
+                            <a class="c1" href="http://kshar.hopto.org/reddit_image_scrapper">kshar.hopto.org/reddit_image_scrapper</a>
+                        </span>
+                    </p>
+                </div>
+                <ul class="c12 lst-kix_6slg6l57936n-0 start">
+                    <li class="c2 li-bullet-0"><span class="c6">Chrome </span><span class="c4">Web app that creates a zipped folder of images from a reddit URL for the user to download</span></li>
+                    <li class="c2 li-bullet-0"><span class="c4">Express.JS server to handle web requests to itself and to make requests to the Reddit API</span></li>
+                    <li class="c2 li-bullet-0"><span class="c4">Front End uses a third party library to download incoming data from the server into a zip folder</span></li>
+                    <li class="c2 li-bullet-0"><span class="c4">Able to zip 1,000+ images per request</span></li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+    </div>
+</body>
